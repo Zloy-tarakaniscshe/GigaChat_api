@@ -38,7 +38,7 @@ example_class = GenerationImage(image_name="some name", save_image_flag=True)
 example_class.start_gen_image(request="some request")
 ```
 
-### Script features::
+### Script features:
 1) ___Automate the analysis of text data in a conversational format or process multiple text data at once___
 2) ___Generating images on request___
 3) ___In case of long-term multiple requests to the model, it sends an email notification about the completion of work___ 
