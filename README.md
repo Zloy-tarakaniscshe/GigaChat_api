@@ -1,0 +1,2 @@
+# GigaChat_api
+aiohttp_requests_for_GigaChat
