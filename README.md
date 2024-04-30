@@ -20,22 +20,21 @@ named .env and specify the correct settings for making requests to the gigachat 
 
 ### Usage example:
 * ***generation of text responses***
-```
-from gigachat_src import GigaChat
+```python
+from gigachat_src.GigaChat import GigaChat
 
 
-example_class = GigaChat(version=GigaChat-Pro or GigaChat-Lite or GigaChat:latest,
-                         temperature=float("0 <= temperature <= 2"))
-answer = example_class.start_request("some text" or iterable_object["str"])
-type(answer) == dict or list[dict]
+example_class = GigaChat(version="GigaChat-Pro", temperature=1.5)
+answer = example_class.start_request("some text")
+# type(answer) == dict or list[dict]
 ```
 
 * ***image generation***
-```
-from gigachat_src import GenerationImage
+```python
+from gigachat_src.GigaChat import GenerationImage
 
 
-example_class = GenerationImage(image_name="some name", save_image_flag=True or False)
+example_class = GenerationImage(image_name="some name", save_image_flag=True)
 example_class.start_gen_image(request="some request")
 ```
 
