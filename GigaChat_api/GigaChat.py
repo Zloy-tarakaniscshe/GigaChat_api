@@ -5,7 +5,7 @@ import shutil
 
 import config
 from log_to_mail import MailExecutor
-from request_api import *
+from GigaChat_api.functions.request_api import *
 
 
 class GigaChat:
