@@ -1,0 +1,7 @@
+.idea
+__pycache__
+config/__pycache__
+config/.env
+log_to_mail/__pycache__
+venv
+сertificates
