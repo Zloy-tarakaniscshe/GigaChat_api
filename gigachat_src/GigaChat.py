@@ -90,6 +90,7 @@ class GenerationImage(GigaChat):
     def _generation_for_image(self, temp_request) -> None:
         try:
             print("Запущена генерация картинки")
+            print(temp_request)
             id_image = self._pattern.search(temp_request[0]["choices"][0]["message"]["content"])
             url = f"https://gigachat.devices.sberbank.ru/api/v1/files/{id_image[0]}/content"
             answer = request_get_image(url=url,

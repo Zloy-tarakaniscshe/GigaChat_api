@@ -28,7 +28,6 @@ try:
                 "RqUID": str(uuid.uuid4()),
                 "Authorization": f"Basic {__SECRET_KEY}"
     }
-
     __response = requests.request("POST",
                                   "https://ngw.devices.sberbank.ru:9443/api/v2/oauth",
                                   headers=__header,
@@ -44,7 +43,6 @@ try:
         'Accept': 'application/jpg',
         'Authorization': "Bearer " + __response.json()["access_token"]
     }
-
 except requests.RequestException:
     HEADERS = None
     HEADERS_IMAGE = None
